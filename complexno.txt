@@ -1,0 +1,30 @@
+class Complexnumber
+{
+int real,image;
+Complexnumber(int real,int image)
+{
+this.real=real;
+this.image=image;
+}
+void show()
+{
+System.out.println(this.real+"+i"+this.image);
+}}
+class Main6
+{
+public static void main(String args[])
+{
+int x,y;
+
+Complexnumber c1=new Complexnumber(5,4);
+Complexnumber c2=new Complexnumber(4,3);
+x=c1.real+c2.real;
+y=c1.image+c2.image;
+System.out.println("first complex number");
+c1.show();
+System.out.println("second complexnumber");
+c2.show();
+Complexnumber n=new Complexnumber(x,y);
+System.out.println("sum of two complexnumber:");
+n.show();
+}}

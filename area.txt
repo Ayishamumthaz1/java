@@ -1,0 +1,21 @@
+class Rect
+{
+int l,b;
+Rect()
+
+{
+ l=10;
+ b=15;
+}
+void Area()
+{
+System.out.println("area="+(l*b));
+}}
+class main
+{
+public static void main(String args[])
+{
+Rect r1=new Rect();
+r1.Area();
+}}
+~

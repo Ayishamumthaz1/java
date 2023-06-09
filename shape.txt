@@ -1,0 +1,41 @@
+class Shape
+{
+int l,b,r,area;
+Shape(int x,int y)
+{
+l=x;
+b=y;
+}
+Shape(int x)
+{r=x;}
+Shape(int x)
+{
+l=x;
+b=x;
+}
+void tri()
+{
+
+System.out.println("area of triangle:"+0.5*l*b);
+}
+void circle()
+{System.out.println("area of circle"+3.14*r*r);
+}
+void square()
+{
+System.out.println("area of square"+l*l);
+}
+void rectangle()
+{
+System.out.println("area of rectangle:"+l*b);
+~}}
+class Main1
+{
+public static void main(String args[])
+{
+Shape s1=new Shape()
+Shape s2=new Shape()
+Shape s3=new Shape()
+Shape s4=new Shape()
+
+

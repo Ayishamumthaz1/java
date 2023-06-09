@@ -1,0 +1,49 @@
+import java.util.Scanner;
+class Mca
+{String dep,hod;
+int no;
+Scanner sc=new Scanner(System.in);
+void get()
+{
+System.out.println("enter department name");
+dep=sc.next();
+System.out.println("enter HOD name");
+hod=sc.next();
+System.out.println("enter no of strength");
+no=sc.nextInt();
+}
+void display()
+{
+System.out.println("details");
+System.out.println("name of department:"+dep);
+System.out.println("Name of HOD:"+hod);
+System.out.println("Strength:"+no);
+}
+}
+class Sone extends Mca
+{String name,add;
+int rollno;
+Scanner sc=new Scanner(System.in);
+void get()
+{super.get();
+System.out.println("enter name of student");
+name=sc.next();
+System.out.println("enter roll number");
+rollno=sc.nextInt();
+System.out.println("enter address");
+add=sc.next();
+}
+void display()
+{super.display();
+System.out.println("name of the student:"+name);
+System.out.println("ROLL NO:"+rollno);
+System.out.println("address:"+add);
+}
+}
+class MOOC extends Sone
+{String cname;
+int du;
+Scanner sc=new Scanner(System.in);
+void get()
+{
+super.get();

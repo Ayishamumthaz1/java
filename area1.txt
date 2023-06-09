@@ -1,0 +1,36 @@
+class Rect
+{
+int l,b;
+Rect()
+{
+l=10;
+b=15;
+}
+
+void Area()
+{
+System.out.println("area of rectangle="+l*b);
+}
+}
+class Cir
+{
+int r;
+Cir()
+
+{
+r=6;
+}
+void Area()
+{
+System.out.println("area of circle="+3.14*r*r);
+}
+}
+
+class main
+{
+public static void main(String args[])
+{
+Rect r1=new Rect();
+Cir c1=new Cir();
+r1.Area();
+c1.Area();
