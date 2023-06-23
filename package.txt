@@ -1,0 +1,95 @@
+package Graphics;
+import java.util.Scanner;
+interface Area
+{
+        public void read();
+}
+public class Rect implements Area
+{
+        public void read()
+        {
+                Scanner sc=new Scanner(System.in);
+                System.out.println("enter the length");
+                int l=sc.nextInt();
+                System.out.println("enter the breadth");
+                int b=sc.nextInt();
+                int a=l*b;
+                System.out.println("area of rectangle:"+a);
+        }
+}
+package Graphics;
+import java.util.Scanner;
+interface Area
+{
+        public void read();
+}
+public class tri
+{
+        public void read()
+        {
+                Scanner sc=new Scanner(System.in);
+                System.out.println("enter the length");
+                int l=sc.nextInt();
+                System.out.println("enter the hight");
+                int h=sc.nextInt();
+                int a=l*h;
+                System.out.println("area of the triangl:"+a);
+        }
+}package Graphics;
+import java.util.Scanner;
+interface Area
+{
+ public void read();
+
+}
+public class Circle
+
+{
+        public void read()
+        {
+                Scanner sc=new Scanner(System.in);
+                System.out.println("enter the radius");
+                int r=sc.nextInt();
+                double a=3.14*r*r;
+                System.out.println("area of the circle:"+a);
+        }
+}
+
+package Graphics;
+import java.util.Scanner;
+interface Area
+{
+public void read();
+}
+public class Squ implements Area
+{
+        public void read()
+        {
+                Scanner sc=new Scanner(System.in);
+                System.out.println("enter the length of side");
+                int l=sc.nextInt();
+                int a=l*l;
+                 System.out.println("area of the square:"+a);
+        }
+}
+~
+import Graphics.*;
+import java.util.Scanner;
+class Main7
+{
+        public static void main(String args[])
+        {
+        Graphics.Rect r1=new Graphics.Rect();
+         Graphics.Circle c1=new Graphics.Circle();
+         Graphics.Squ s1=new Graphics.Squ();
+         Graphics.tri t1=new Graphics.tri();
+
+        r1.read();
+        c1.read();
+        s1.read();
+        t1.read();
+
+        }
+}
+~
+
