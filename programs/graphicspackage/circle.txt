@@ -1,0 +1,20 @@
+package Graphics;
+import java.util.Scanner;
+interface Area
+{
+ public void read();
+
+}
+public class Circle
+
+{
+        public void read()
+        {
+                Scanner sc=new Scanner(System.in);
+                System.out.println("enter the radius");
+                int r=sc.nextInt();
+                double a=3.14*r*r;
+                System.out.println("area of the circle:"+a);
+        }
+}
+

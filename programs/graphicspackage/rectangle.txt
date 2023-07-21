@@ -1,0 +1,19 @@
+package Graphics;
+import java.util.Scanner;
+interface Area
+{
+        public void read();
+}
+public class Rect implements Area
+{
+        public void read()
+        {
+                Scanner sc=new Scanner(System.in);
+                System.out.println("enter the length");
+                int l=sc.nextInt();
+                System.out.println("enter the breadth");
+                int b=sc.nextInt();
+                int a=l*b;
+                System.out.println("area of rectangle:"+a);
+        }
+}
