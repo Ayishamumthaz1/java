@@ -1,0 +1,81 @@
+import java.util.Scanner;
+interface Shape
+{
+        void area();
+        void perimeter();
+}
+class Rectangle implements Shape
+{
+        int length,breadth;
+        Rectangle(int length,int breadth)
+        {
+                this.length=length;
+                this.breadth=breadth;
+        }
+        public void area()
+        {
+                int a=length*breadth;
+
+                System.out.println("area of the rectangle:"+a);
+        }
+        public void perimeter()
+        {
+                int p=2*(length+breadth);
+                System.out.println("perimeter of the rectangle:"+p);
+        }
+}
+class Circle implements Shape
+{
+        int radius;
+        Circle(int radius)
+        {
+                this.radius=radius;
+        }
+        public void area()
+        {
+                double a=3.14*radius*radius;
+                System.out.println("area of the circle:"+a);
+        }
+        public void perimeter()
+        {
+                double p=2*3.14*radius;
+                System.out.println("perimeter of the circle:"+p);
+        }
+}
+class Main10
+{
+        public static void main(String args[])
+        {
+                Scanner sc=new Scanner(System.in);
+                do{
+                System.out.println("1.Rectangle");
+                System.out.println("2.Circle");
+                System.out.println("enter your choice:");
+                int c=sc.nextInt();
+                if(c==1)
+                {
+                        System.out.println("enter length");
+                        int l=sc.nextInt();
+                        System.out.println("enter breadth");
+                        int b=sc.nextInt();
+                        Rectangle r1=new Rectangle(l,b);
+                        r1.area();
+                        r1.perimeter();
+                }
+                else if(c==2)
+                {
+                        System.out.println("enter radius:");
+                        int r=sc.nextInt();
+                        Circle c1=new Circle(r);
+                        c1.area();
+                        c1.perimeter();
+
+                }
+                else
+                {
+                        System.out.println("invalid choice");
+                        break;
+                }}
+                while(true);
+        }
+}
