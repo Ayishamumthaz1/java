@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class A
+{
+        void Concat(int a,int b)
+        {
+                int sum=a+a;
+                System.out.println("concated number is:"+sum);
+        }
+        void Concat(String s1,String s2)
+        {
+                String s=s1+s2;
+                System.out.println("concated string is:"+s);
+        }
+}
+class main21
+{
+        public static void main(String args[])
+        {
+                try
+                {
+                Scanner sc=new Scanner(System.in);
+                System.out.println("enter first number:");
+                int a=sc.nextInt();
+                System.out.println("enter second number:");
+                int b=sc.nextInt();
+                System.out.println("enter first string:");
+                String s1=sc.next();
+                System.out.println("enter second string:");
+                String s2=sc.next();
+                A a1=new A();
+                a1.Concat(a,b);
+                a1.Concat(s1,s2);
+                }
+                catch(Exception e)
+                {
+                        System.out.println(e);
+                }
+        }
+}
