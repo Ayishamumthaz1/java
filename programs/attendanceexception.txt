@@ -1,0 +1,40 @@
+import java.util.Scanner;
+class attendanceException extends Exception
+{
+        attendanceException(String m)
+        {
+                super(m);
+        }
+}
+class Attendance
+{
+        void eligibilitycheck(int a)throws attendanceException
+        {
+                if(a>75)
+                {
+                        System.out.println("eligible for exam");
+                }
+                else
+                {
+                        throw new attendanceException("attendace must be greater than 75%");
+                }
+        }
+}
+class Main23
+{
+        public static void main(String args[])
+        {
+                try
+                {
+                Scanner sc=new Scanner(System.in);
+                System.out.println("enter your attendance percentage");
+                int a=sc.nextInt();
+                Attendance a1=new Attendance();
+                a1.eligibilitycheck(a);
+                }
+                catch(Exception e)
+                {
+                        System.out.println("Exception-------"+e);
+                }
+        }
+}
