@@ -1,0 +1,21 @@
+package Temperature;
+import java.util.Scanner;
+interface B
+{
+        public void calculate();
+}
+public class Fahrenheit implements B
+{
+        Scanner sc=new Scanner(System.in);
+        public void calculate()
+        {
+                System.out.println("enter the value of N:");
+                int n=sc.nextInt();
+
+                for(int i=1;i<n;i++)
+                {
+                        float f=(i*(9/5))+32;
+                        System.out.println("temperature in fahrenheit:"+f);
+                }
+        }
+}

@@ -1,0 +1,36 @@
+import Temperature.*;
+import java.util.Scanner;
+class Main22
+{
+        public static void main(String args[])
+        {
+                Scanner sc=new Scanner(System.in);
+                Temperature.Celsius c1=new Temperature.Celsius();
+                Temperature.Fahrenheit f1=new Temperature.Fahrenheit();
+                do
+                {
+                        System.out.println("1.Fahrenheit to celsius");
+                        System.out.println("2.celsiud to fahrenheit");
+                        System.out.println("3.exit");
+                        System.out.println("enter your choice");
+                        int c=sc.nextInt();
+                        if(c==1)
+                        {
+                                c1.calculate();
+                        }
+                        if(c==2)
+                        {
+                                f1.calculate();
+                        }
+                        if(c==3)
+                        {
+                                break;
+                        }
+                        else
+                        {
+                                System.out.println("invalid choice");
+                        }
+                }
+                while(true);
+        }
+}
